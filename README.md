@@ -38,6 +38,7 @@ name: sample
 channels:
   - defaults
   - conda-forge
+  - file:///user/localchannel
 
 dependencies:
   - python=3.7
@@ -53,9 +54,13 @@ dependencies:
 
 ```
 
-Sometimes you could not find the libraries/packages in conda `defaults` channel. Then another popular palce is `conda-forge` . You could also add your own personal libraries if you package it with `conda`. Then you just point the location like `- file:///usr/channel` if your channel is `usr/channel`. This is similar to the packages with `http` link (`- http://theweblocation.html`). The default channel_alias is http://conda.anaconda.org/.
+Sometimes you could not find the libraries/packages in conda `defaults` channel. Then another popular palce is `conda-forge` . You could also add your own personal libraries if you package it with `conda`. 
 
-To use 'yml' file, run `conda create --name newEnv --file=youfile1.yml --file=yourfile2.yml`
+Then you just point the location like `- file:///user/channel` if your channel is `/user/channel`. This is similar to the packages with the url link. The default channel_alias for anaconda is http://conda.anaconda.org/.
+
+To use `yml` file, run 
+
+`conda create --name newEnv --file=youfile1.yml --file=yourfile2.yml`
 
 ## Checking/Deleting Environment
 
