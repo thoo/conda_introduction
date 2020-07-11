@@ -64,14 +64,30 @@ To use `yml` file, run
 
 ## Checking/Deleting Environment
 
-If you want to get all the names of environment, run `conda list`.  To delete the environment after you finish your project, run `conda remove --name yourOldEnv --all`. 
+If you want to get all the names of environment, run `conda list`.  
+
+To delete the environment after you finish your project, run 
+
+`conda remove --name yourOldEnv --all`. 
 
 ## Search Packages
 
-You can search packages by `conda search pip=20.2` . This will search `pip` in the default conda channel. You can also specify the channel by `conda search -c conda-forge pip=20` . This will search the package in `conda-forge` channel. `conda-forge` is a very popular conda channel. Some companies have their own conda channel (e.g. `install pytorch torchvision -c pytorch`) . 
+You can search packages by 
+
+`conda search pip=20.2` . 
+
+This will search `pip` in the default conda channel. You can also specify the channel by
+
+ `conda search -c conda-forge pip=20` . 
+
+This will search the package in `conda-forge` channel. `conda-forge` is a very popular conda channel. Some companies have their own conda channel (e.g. `install pytorch torchvision -c pytorch`) . 
 
 
 
 ## Exporting your environment
 
-To share your environment, run `conda env export --name yourEnv > environment.yml` to save your environment in `environment.yml` file.
+To share your environment, run
+
+ `conda env export --name yourEnv > environment.yml` 
+
+to save your environment in `environment.yml` file.
